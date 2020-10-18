@@ -70,6 +70,7 @@ type
   private
     FController: TControllerSample;
     procedure ButtonHandlerCourse;
+    procedure ButtonHandler;
   public
     { Public declarations }
   end;
@@ -136,6 +137,13 @@ begin
   FController.mtCourses.Post;
 end;
 
+procedure TFrmMain.ButtonHandler;
+begin
+  btnInsert.Enabled := dsStudent.State in [dsBrowse, dsInactive];
+  btnEdit.Enabled := btnInsert.Enabled and (dsSearch.DataSet.RecordCount > 0);;
+  btnDelete.Enabled := btnEdit.Enabled;
+end;
+
 procedure TFrmMain.ButtonHandlerCourse;
 begin
   btnInsertCourse.Enabled := (dsStudent.DataSet.State in dsEditModes) and not(dsCourse.DataSet.State in dsEditModes);
@@ -146,14 +154,13 @@ end;
 procedure TFrmMain.dsSearchStateChange(Sender: TObject);
 begin
   ButtonHandlerCourse;
+  ButtonHandler;
 end;
 
 procedure TFrmMain.dsStudentStateChange(Sender: TObject);
 begin
   ButtonHandlerCourse;
-  btnInsert.Enabled := dsStudent.State in [dsBrowse, dsInactive];
-  btnEdit.Enabled := btnInsert.Enabled and (dsSearch.DataSet.RecordCount > 0);;
-  btnDelete.Enabled := btnEdit.Enabled;
+  ButtonHandler;
 end;
 
 procedure TFrmMain.dbGridSearchDblClick(Sender: TObject);

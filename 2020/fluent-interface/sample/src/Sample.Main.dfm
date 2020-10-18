@@ -22,10 +22,6 @@ object FrmMain: TFrmMain
     Height = 415
     Align = alClient
     TabOrder = 0
-    ExplicitLeft = 288
-    ExplicitTop = 208
-    ExplicitWidth = 185
-    ExplicitHeight = 41
     object pnlStrings: TPanel
       AlignWithMargins = True
       Left = 4
@@ -35,13 +31,10 @@ object FrmMain: TFrmMain
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 0
-      ExplicitLeft = 0
-      ExplicitTop = 89
-      ExplicitHeight = 298
       object sptSeparator: TSplitter
         Left = 345
-        Top = 141
-        Height = 171
+        Top = 137
+        Height = 175
         ExplicitLeft = 424
         ExplicitTop = 184
         ExplicitHeight = 100
@@ -50,7 +43,7 @@ object FrmMain: TFrmMain
         Left = 0
         Top = 0
         Width = 728
-        Height = 25
+        Height = 21
         Align = alTop
         Alignment = taLeftJustify
         BevelOuter = bvNone
@@ -58,7 +51,7 @@ object FrmMain: TFrmMain
         Color = clHotLight
         Font.Charset = DEFAULT_CHARSET
         Font.Color = 15658734
-        Font.Height = -13
+        Font.Height = -12
         Font.Name = 'Segoe UI'
         Font.Style = []
         ParentBackground = False
@@ -67,12 +60,13 @@ object FrmMain: TFrmMain
       end
       object pnlContent: TPanel
         Left = 0
-        Top = 69
+        Top = 65
         Width = 728
         Height = 72
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 1
+        ExplicitTop = 69
         object Label1: TLabel
           Left = 16
           Top = 6
@@ -119,12 +113,13 @@ object FrmMain: TFrmMain
       end
       object pnlListType: TPanel
         Left = 0
-        Top = 25
+        Top = 21
         Width = 728
         Height = 44
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 2
+        ExplicitTop = 25
         object rgEvenOdd: TRadioGroup
           Left = 0
           Top = 0
@@ -146,19 +141,20 @@ object FrmMain: TFrmMain
       end
       object pnlMemoList: TPanel
         Left = 0
-        Top = 141
+        Top = 137
         Width = 345
-        Height = 171
+        Height = 175
         Align = alLeft
         BevelOuter = bvNone
         Caption = 'pnlMemoList'
         TabOrder = 3
-        ExplicitHeight = 266
+        ExplicitTop = 141
+        ExplicitHeight = 171
         object mmList: TMemo
           Left = 0
           Top = 0
           Width = 345
-          Height = 171
+          Height = 175
           Align = alClient
           BevelInner = bvNone
           BevelOuter = bvNone
@@ -167,14 +163,14 @@ object FrmMain: TFrmMain
           ReadOnly = True
           ScrollBars = ssVertical
           TabOrder = 0
-          ExplicitHeight = 266
+          ExplicitHeight = 171
         end
       end
       object ltbList: TListBox
         Left = 348
-        Top = 141
+        Top = 137
         Width = 380
-        Height = 171
+        Height = 175
         Align = alClient
         BevelInner = bvNone
         BevelOuter = bvNone
@@ -182,7 +178,8 @@ object FrmMain: TFrmMain
         Columns = 3
         ItemHeight = 13
         TabOrder = 4
-        ExplicitHeight = 266
+        ExplicitTop = 141
+        ExplicitHeight = 171
       end
     end
     object pnlFind: TPanel
@@ -194,8 +191,6 @@ object FrmMain: TFrmMain
       Align = alTop
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitLeft = 0
-      ExplicitTop = 0
       DesignSize = (
         728
         89)
@@ -245,7 +240,7 @@ object FrmMain: TFrmMain
         Left = 0
         Top = 0
         Width = 728
-        Height = 25
+        Height = 21
         Align = alTop
         Alignment = taLeftJustify
         BevelOuter = bvNone
@@ -253,7 +248,7 @@ object FrmMain: TFrmMain
         Color = clHotLight
         Font.Charset = DEFAULT_CHARSET
         Font.Color = 15658734
-        Font.Height = -13
+        Font.Height = -12
         Font.Name = 'Segoe UI'
         Font.Style = []
         ParentBackground = False

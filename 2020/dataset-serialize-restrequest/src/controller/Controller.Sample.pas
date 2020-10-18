@@ -39,6 +39,11 @@ implementation
 
 uses RESTRequest4D.Request, DataSet.Serialize;
 
+const
+  URL =  'http://localhost:9000';
+  APPLICATION_TYPE = 'application/json';
+  STUDENTS = 'students';
+
 {$R *.dfm}
 
 procedure TControllerSample.DataModuleCreate(Sender: TObject);
@@ -67,8 +72,8 @@ procedure TControllerSample.ListAll;
 var
   LResponse: IResponse;
 begin
-  LResponse := TRequest.New.BaseURL('http://localhost:3000').Resource('students')
-    .Accept('application/json')
+  LResponse := TRequest.New.BaseURL(URL).Resource(STUDENTS)
+    .Accept(APPLICATION_TYPE)
     .DataSetAdapter(mtSearch).Get;
   if LResponse.StatusCode <> 200 then
     raise Exception.Create('Ocorreu um erro ao listar os alunos');
@@ -93,10 +98,10 @@ begin
   try
     LMemTableAuxiliar.LoadStructure(mtStudent.SaveStructure);
     LRequest := TRequest.New
-      .BaseURL('http://localhost:3000').Resource('students')
+      .BaseURL(URL).Resource(STUDENTS)
       .DataSetAdapter(LMemTableAuxiliar)
       .ClearBody.AddBody(mtStudent.ToJSONObject)
-      .Accept('application/json');
+      .Accept(APPLICATION_TYPE);
 
     if IsNew then
     begin
@@ -110,6 +115,9 @@ begin
       mtSearch.CopyRecord(LMemTableAuxiliar);
       mtSearch.Post;
     end;
+
+    if (LResponse.StatusCode <> 201) and (LResponse.StatusCode <> 200) then
+        raise Exception.Create('Ocorreu um erro ao salvar o aluno')
   finally
     LMemTableAuxiliar.Free;
   end;
@@ -120,10 +128,10 @@ var
   LResponse: IResponse;
 begin
   LResponse := TRequest.New
-    .BaseURL('http://localhost:3000').Resource('students').ResourceSuffix(mtSearchid.AsString)
-    .Accept('application/json').Delete;
+    .BaseURL(URL).Resource(STUDENTS).ResourceSuffix(mtSearchid.AsString)
+    .Accept(APPLICATION_TYPE).Delete;
   if LResponse.StatusCode <> 200 then
-    raise Exception.Create('Ocorreu um erro ao encontrar um aluno em específico')
+    raise Exception.Create('Ocorreu um erro ao excluir um aluno em específico')
   else
     ListAll;
 end;
@@ -132,8 +140,8 @@ procedure TControllerSample.GetById;
 var
   LResponse: IResponse;
 begin
-  LResponse := TRequest.New.BaseURL('http://localhost:3000').Resource('students').ResourceSuffix(mtSearchid.AsString)
-    .Accept('application/json')
+  LResponse := TRequest.New.BaseURL(URL).Resource(STUDENTS).ResourceSuffix(mtSearchid.AsString)
+    .Accept(APPLICATION_TYPE)
     .DataSetAdapter(mtStudent).Get;
   if LResponse.StatusCode <> 200 then
     raise Exception.Create('Ocorreu um erro ao encontrar um aluno em específico')

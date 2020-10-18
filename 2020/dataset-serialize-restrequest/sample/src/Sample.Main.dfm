@@ -131,8 +131,6 @@ object FrmMain: TFrmMain
             TabOrder = 1
             TabPosition = tpBottom
             OnChanging = pgControlCoursesChanging
-            ExplicitLeft = 16
-            ExplicitTop = 60
             object tabRegisterCourse: TTabSheet
               object btnSaveCourse: TSpeedButton
                 Left = 566
@@ -289,8 +287,6 @@ object FrmMain: TFrmMain
         Align = alClient
         BevelOuter = bvNone
         TabOrder = 0
-        ExplicitTop = 65
-        ExplicitHeight = 301
         object dbGridSearch: TDBGrid
           Left = 0
           Top = 0
