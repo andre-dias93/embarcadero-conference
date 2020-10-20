@@ -132,6 +132,8 @@ object FrmMain: TFrmMain
             TabPosition = tpBottom
             OnChanging = pgControlCoursesChanging
             object tabRegisterCourse: TTabSheet
+              ExplicitLeft = -28
+              ExplicitTop = 6
               object btnSaveCourse: TSpeedButton
                 Left = 566
                 Top = 64

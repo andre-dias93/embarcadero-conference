@@ -8,6 +8,11 @@ uses
   Vcl.ExtCtrls, Vcl.Samples.Spin;
 
 type
+
+  TEditHelper = class helper for TEdit
+    function RemoveAccent: string;
+  end;
+
   TFrmMain = class(TForm)
     pnlFluentInterface: TPanel;
     pnlStrings: TPanel;
@@ -23,7 +28,6 @@ type
     rgEvenOdd: TRadioGroup;
     pnlMemoList: TPanel;
     mmList: TMemo;
-    ltbList: TListBox;
     pnlFind: TPanel;
     Label3: TLabel;
     Label4: TLabel;
@@ -31,6 +35,10 @@ type
     edtSearch: TEdit;
     btnFind: TButton;
     pnlFindTitle: TPanel;
+    Label5: TLabel;
+    Panel1: TPanel;
+    ltbList: TListBox;
+    Label6: TLabel;
     procedure FormCreate(Sender: TObject);
     procedure btnFindClick(Sender: TObject);
     procedure btnListClick(Sender: TObject);
@@ -101,26 +109,33 @@ begin
 end;
 
 procedure TFrmMain.btnFindClick(Sender: TObject);
-var
-  LText: string;
-  LSearch: string;
+// var
+// LText: string;
+// LSearch: string;
 begin
-  LText := Trim(edtText.Text);
-  LText := TFluentInterfaceUtils.RemoveAcento(LText);
-  LText := UpperCase(LText);
+  // LText := Trim(edtText.Text);
+  // LText := TFluentInterfaceUtils.RemoveAccent(LText);
+  // LText := UpperCase(LText);
+  //
+  // LSearch := Trim(edtSearch.Text);
+  // LSearch := TFluentInterfaceUtils.RemoveAccent(LSearch);
+  // LSearch := UpperCase(LSearch);
+  //
+  // CustomMessage(LText.Contains(LSearch));
 
-  LSearch := Trim(edtSearch.Text);
-  LSearch := TFluentInterfaceUtils.RemoveAcento(LSearch);
-  LSearch := UpperCase(LSearch);
-
-  CustomMessage(LText.Contains(LSearch));
-
-  // MostrarMensagem(edtTexto.RemoveAcento.Trim.ToUpper.Contains(edtPesquisa.RemoveAcento.Trim.ToUpper));
+  CustomMessage(edtText.RemoveAccent.Trim.ToUpper.Contains(edtSearch.RemoveAccent.Trim.ToUpper));
 end;
 
 procedure TFrmMain.FormCreate(Sender: TObject);
 begin
   rgEvenOdd.ItemIndex := TEvenOddType.Even.GetValue;
+end;
+
+{ TEditHelper }
+
+function TEditHelper.RemoveAccent: string;
+begin
+  Result := TFluentInterfaceUtils.RemoveAccent(Self.Text)
 end;
 
 end.

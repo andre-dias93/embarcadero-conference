@@ -7,27 +7,27 @@ uses Vcl.StdCtrls;
 type
   TFluentInterfaceUtils = class
   public
-    class function RemoveAcento(const ATexto: string): string;
+    class function RemoveAccent(const AText: string): string;
   end;
 
   TStringUtilsHelper = class helper for TEdit
-    function RemoveAcento: string;
+    function RemoveAccent: string;
   end;
 
 implementation
 
-class function TFluentInterfaceUtils.RemoveAcento(const ATexto: string): string;
+class function TFluentInterfaceUtils.RemoveAccent(const AText: string): string;
 type
   USAscii20127 = type AnsiString(20127);
 begin
-  Result := string(USAscii20127(ATexto));
+  Result := string(USAscii20127(AText));
 end;
 
 { TStringUtilsHelper }
 
-function TStringUtilsHelper.RemoveAcento: string;
+function TStringUtilsHelper.RemoveAccent: string;
 begin
-  Result :=  TFluentInterfaceUtils.RemoveAcento(Self.Text);
+  Result :=  TFluentInterfaceUtils.RemoveAccent(Self.Text);
 end;
 
 end.

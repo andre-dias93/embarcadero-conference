@@ -66,7 +66,6 @@ object FrmMain: TFrmMain
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 1
-        ExplicitTop = 69
         object Label1: TLabel
           Left = 16
           Top = 6
@@ -119,7 +118,6 @@ object FrmMain: TFrmMain
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 2
-        ExplicitTop = 25
         object rgEvenOdd: TRadioGroup
           Left = 0
           Top = 0
@@ -148,13 +146,27 @@ object FrmMain: TFrmMain
         BevelOuter = bvNone
         Caption = 'pnlMemoList'
         TabOrder = 3
-        ExplicitTop = 141
-        ExplicitHeight = 171
-        object mmList: TMemo
+        object Label5: TLabel
           Left = 0
           Top = 0
           Width = 345
-          Height = 175
+          Height = 15
+          Align = alTop
+          Alignment = taCenter
+          Caption = 'TStringBuilder'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Segoe UI'
+          Font.Style = [fsBold]
+          ParentFont = False
+          ExplicitWidth = 81
+        end
+        object mmList: TMemo
+          Left = 0
+          Top = 15
+          Width = 345
+          Height = 160
           Align = alClient
           BevelInner = bvNone
           BevelOuter = bvNone
@@ -163,23 +175,55 @@ object FrmMain: TFrmMain
           ReadOnly = True
           ScrollBars = ssVertical
           TabOrder = 0
-          ExplicitHeight = 171
+          ExplicitTop = 0
+          ExplicitHeight = 175
         end
       end
-      object ltbList: TListBox
+      object Panel1: TPanel
         Left = 348
         Top = 137
         Width = 380
         Height = 175
         Align = alClient
-        BevelInner = bvNone
-        BevelOuter = bvNone
-        BorderStyle = bsNone
-        Columns = 3
-        ItemHeight = 13
+        Caption = 'Panel1'
         TabOrder = 4
-        ExplicitTop = 141
-        ExplicitHeight = 171
+        ExplicitLeft = 376
+        ExplicitTop = 200
+        ExplicitWidth = 185
+        ExplicitHeight = 41
+        object Label6: TLabel
+          Left = 1
+          Top = 1
+          Width = 378
+          Height = 15
+          Align = alTop
+          Alignment = taCenter
+          Caption = 'TStringList'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Segoe UI'
+          Font.Style = [fsBold]
+          ParentFont = False
+          ExplicitWidth = 60
+        end
+        object ltbList: TListBox
+          Left = 1
+          Top = 16
+          Width = 378
+          Height = 158
+          Align = alClient
+          BevelInner = bvNone
+          BevelOuter = bvNone
+          BorderStyle = bsNone
+          Columns = 3
+          ItemHeight = 13
+          TabOrder = 0
+          ExplicitLeft = 351
+          ExplicitTop = 143
+          ExplicitWidth = 380
+          ExplicitHeight = 175
+        end
       end
     end
     object pnlFind: TPanel
