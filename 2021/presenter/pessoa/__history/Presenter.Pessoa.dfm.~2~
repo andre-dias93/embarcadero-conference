@@ -1,0 +1,13 @@
+inherited frmPresenterPessoa: TfrmPresenterPessoa
+  Caption = 'Cadastro de Pessoas'
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited pgControl: TPageControl
+    inherited tabPesquisa: TTabSheet
+      ExplicitLeft = 4
+      ExplicitTop = 4
+      ExplicitWidth = 650
+      ExplicitHeight = 350
+    end
+  end
+end

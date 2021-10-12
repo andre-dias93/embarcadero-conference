@@ -1,0 +1,38 @@
+inherited frmPresenterPessoa: TfrmPresenterPessoa
+  Caption = 'Cadastro de Pessoas'
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited pgControl: TPageControl
+    inherited tabPesquisa: TTabSheet
+      ExplicitLeft = 4
+      ExplicitTop = 4
+      ExplicitWidth = 650
+      ExplicitHeight = 350
+      inherited dbGridPesquisa: TDBGrid
+        Columns = <
+          item
+            Expanded = False
+            FieldName = 'id'
+            Title.Caption = 'C'#243'digo'
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'nome'
+            Title.Caption = 'Nome'
+            Width = 273
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'email'
+            Title.Caption = 'E-mail'
+            Visible = True
+          end>
+      end
+    end
+  end
+  inherited dsPesquisa: TDataSource
+    DataSet = ContainerPessoa.mtPesquisa
+  end
+end

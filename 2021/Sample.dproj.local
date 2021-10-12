@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/09/18 20:33:04.000.498,=C:\Users\Andre Dias\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/10/10 22:10:58.000.678,=C:\Users\Andre Dias\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/10/10 22:11:35.000.196,D:\systems\delphi\embarcadero-conference\2021\presenter\Presenter.Principal.pas=C:\Users\Andre Dias\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/10/10 22:11:35.000.196,D:\systems\delphi\embarcadero-conference\2021\presenter\Presenter.Principal.dfm=C:\Users\Andre Dias\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/10/10 22:12:32.000.241,D:\systems\delphi\embarcadero-conference\2021\Presenter.Container.Architecture.dproj=C:\Users\Andre Dias\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2021/10/10 22:18:20.000.178,=D:\systems\delphi\embarcadero-conference\2021\Unit1.pas</Transaction>
+    <Transaction>2021/10/10 22:18:41.000.986,D:\systems\delphi\embarcadero-conference\2021\presenter\cidade\Presenter.Cidade.pas=D:\systems\delphi\embarcadero-conference\2021\Unit1.pas</Transaction>
+    <Transaction>2021/10/10 22:18:41.000.986,D:\systems\delphi\embarcadero-conference\2021\presenter\cidade\Presenter.Cidade.dfm=D:\systems\delphi\embarcadero-conference\2021\Unit1.dfm</Transaction>
+    <Transaction>2021/10/10 22:21:40.000.529,=D:\systems\delphi\embarcadero-conference\2021\Unit1.pas</Transaction>
+    <Transaction>2021/10/10 22:21:50.000.506,=D:\systems\delphi\embarcadero-conference\2021\Unit1.pas</Transaction>
+    <Transaction>2021/10/10 22:22:44.000.564,D:\systems\delphi\embarcadero-conference\2021\layout\Layout.Base.Presenter.dfm=D:\systems\delphi\embarcadero-conference\2021\Unit1.dfm</Transaction>
+    <Transaction>2021/10/10 22:22:44.000.564,D:\systems\delphi\embarcadero-conference\2021\layout\Layout.Base.Presenter.pas=D:\systems\delphi\embarcadero-conference\2021\Unit1.pas</Transaction>
+    <Transaction>2021/10/10 22:25:20.000.377,=D:\systems\delphi\embarcadero-conference\2021\Unit1.pas</Transaction>
+    <Transaction>2021/10/10 22:26:58.000.982,D:\systems\delphi\embarcadero-conference\2021\layout\Layout.Container.Base.pas=D:\systems\delphi\embarcadero-conference\2021\Unit1.pas</Transaction>
+    <Transaction>2021/10/10 22:26:58.000.982,D:\systems\delphi\embarcadero-conference\2021\layout\Layout.Container.Base.dfm=D:\systems\delphi\embarcadero-conference\2021\Unit1.dfm</Transaction>
+    <Transaction>2021/10/10 22:27:13.000.082,D:\systems\delphi\embarcadero-conference\2021\layout\Layout.Base.Presenter.pas=</Transaction>
+    <Transaction>2021/10/10 22:27:54.000.067,=D:\systems\delphi\embarcadero-conference\2021\layout\Layout.Presenter.Base.pas</Transaction>
+    <Transaction>2021/10/10 22:38:59.000.175,=D:\systems\delphi\embarcadero-conference\2021\Unit1.pas</Transaction>
+    <Transaction>2021/10/10 22:39:38.000.057,D:\systems\delphi\embarcadero-conference\2021\presenter\cidade\Presenter.Cidade.dfm=D:\systems\delphi\embarcadero-conference\2021\Unit1.dfm</Transaction>
+    <Transaction>2021/10/10 22:39:38.000.057,D:\systems\delphi\embarcadero-conference\2021\presenter\cidade\Presenter.Cidade.pas=D:\systems\delphi\embarcadero-conference\2021\Unit1.pas</Transaction>
+    <Transaction>2021/10/11 16:08:42.000.052,C:\Users\andre.dias\Downloads\2021\2021\Presenter.Container.Architecture.dproj=C:\Users\andre.dias\Downloads\2021\2021\Sample.dproj</Transaction>
+    <Transaction>2021/10/11 17:02:47.000.544,=C:\Users\andre.dias\Downloads\2021\2021\Unit1.pas</Transaction>
+    <Transaction>2021/10/11 17:03:05.000.134,C:\Users\andre.dias\Downloads\2021\2021\Unit1.dfm=C:\Users\andre.dias\Downloads\2021\2021\container\cidade\Container.Cidade.dfm</Transaction>
+    <Transaction>2021/10/11 17:03:05.000.134,C:\Users\andre.dias\Downloads\2021\2021\Unit1.pas=C:\Users\andre.dias\Downloads\2021\2021\container\cidade\Container.Cidade.pas</Transaction>
+    <Transaction>2021/10/11 19:04:55.269,=C:\Users\andre.dias\Downloads\2021\2021\Unit1.pas</Transaction>
+    <Transaction>2021/10/11 19:05:11.132,C:\Users\andre.dias\Downloads\2021\2021\service\Service.Cidade.pas=C:\Users\andre.dias\Downloads\2021\2021\Unit1.pas</Transaction>
+    <Transaction>2021/10/11 19:14:33.261,=C:\Users\andre.dias\Downloads\2021\2021\Unit1.pas</Transaction>
+    <Transaction>2021/10/11 19:15:14.060,C:\Users\andre.dias\Downloads\2021\2021\utils\Utils.Constante.pas=C:\Users\andre.dias\Downloads\2021\2021\Unit1.pas</Transaction>
+    <Transaction>2021/10/11 19:17:12.452,C:\Users\andre.dias\Downloads\2021\2021\utils\Utils.Constante.pas=</Transaction>
+    <Transaction>2021/10/11 19:18:42.361,=C:\Users\andre.dias\Downloads\2021\2021\util\Util.Consts.pas</Transaction>
+    <Transaction>2021/10/11 22:42:47.192,=C:\Users\andre.dias\Downloads\2021\2021\Unit1.pas</Transaction>
+    <Transaction>2021/10/11 22:43:10.957,=C:\Users\andre.dias\Downloads\2021\2021\Unit1.pas</Transaction>
+    <Transaction>2021/10/11 22:44:03.342,C:\Users\andre.dias\Downloads\2021\2021\presenter\pessoa\Presenter.Pessoa.pas=C:\Users\andre.dias\Downloads\2021\2021\Unit1.pas</Transaction>
+    <Transaction>2021/10/11 22:44:03.342,C:\Users\andre.dias\Downloads\2021\2021\presenter\pessoa\Presenter.Pessoa.dfm=C:\Users\andre.dias\Downloads\2021\2021\Unit1.dfm</Transaction>
+    <Transaction>2021/10/11 22:46:27.171,=C:\Users\andre.dias\Downloads\2021\2021\Unit1.pas</Transaction>
+    <Transaction>2021/10/11 22:46:45.162,=C:\Users\andre.dias\Downloads\2021\2021\Unit1.pas</Transaction>
+    <Transaction>2021/10/11 22:47:06.162,C:\Users\andre.dias\Downloads\2021\2021\container\pessoa\Container.Pessoa.dfm=C:\Users\andre.dias\Downloads\2021\2021\Unit1.dfm</Transaction>
+    <Transaction>2021/10/11 22:47:06.162,C:\Users\andre.dias\Downloads\2021\2021\container\pessoa\Container.Pessoa.pas=C:\Users\andre.dias\Downloads\2021\2021\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
