@@ -4,3 +4,6 @@
 
 * [Fluent Interface - Encadeando objetos de forma simplificada.](https://github.com/AndreLuizDias/embarcadero-conference/tree/master/2020/fluent-interface)
 * [DataSet Serialize e RestRequest4Delphi, uma combinação que deu certo!](https://github.com/AndreLuizDias/embarcadero-conference/tree/master/2020/dataset-serialize-restrequest)
+
+#### **2021**
+* [Presenter e Container Architeture: Um novo conceito para organização de seus fontes no Delphi.](https://github.com/andre-dias93/embarcadero-conference/tree/master/2021)
