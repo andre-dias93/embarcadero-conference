@@ -5,6 +5,10 @@ inherited frmPresenterCidade: TfrmPresenterCidade
   inherited pgControl: TPageControl
     ActivePage = tabCadastro
     inherited tabCadastro: TTabSheet
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object Label1: TLabel [0]
         Left = 8
         Top = 7

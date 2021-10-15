@@ -103,15 +103,6 @@
             <Form>frmPrincipal</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="layout\Layout.Container.Base.pas">
-            <Form>ContainerBase</Form>
-            <FormType>dfm</FormType>
-            <DesignClass>TDataModule</DesignClass>
-        </DCCReference>
-        <DCCReference Include="layout\Layout.Presenter.Base.pas">
-            <Form>frmPresenterBase</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
         <DCCReference Include="presenter\cidade\Presenter.Cidade.pas">
             <Form>frmPresenterCidade</Form>
             <FormType>dfm</FormType>
@@ -131,6 +122,15 @@
             <Form>ContainerPessoa</Form>
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="shared\Shared.Container.Base.pas">
+            <Form>ContainerBase</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="shared\Shared.Presenter.Base.pas">
+            <Form>frmPresenterBase</Form>
+            <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>

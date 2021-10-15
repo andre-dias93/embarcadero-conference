@@ -1,4 +1,5 @@
 inherited ContainerPessoa: TContainerPessoa
+  OldCreateOrder = True
   Width = 245
   inherited mtPesquisa: TFDMemTable
     object mtPesquisaid: TIntegerField

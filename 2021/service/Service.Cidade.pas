@@ -20,7 +20,7 @@ begin
   LResponse := TRequest.New.BaseURL(ENVIRONMENT).Resource('cidades')
     .DataSetAdapter(AMemTable).Get;
   if LResponse.StatusCode <> 200 then
-    raise Exception.Create('Ocorreu um erro ao listar os alunos');
+    raise Exception.Create('Ocorreu um erro ao listar as cidades');
 end;
 
 end.
