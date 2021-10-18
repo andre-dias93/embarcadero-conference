@@ -1,4 +1,10 @@
 {
-  "cidades": [],
+  "cidades": [
+    {
+      "id": 76,
+      "descricao": "Bálsamo",
+      "estado": "SP"
+    }
+  ],
   "pessoas": []
 }
