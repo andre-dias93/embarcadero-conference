@@ -3,12 +3,8 @@ inherited frmPresenterPessoa: TfrmPresenterPessoa
   PixelsPerInch = 96
   TextHeight = 13
   inherited pgControl: TPageControl
-    ActivePage = tabCadastro
+    ExplicitTop = 30
     inherited tabCadastro: TTabSheet
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object Label1: TLabel [0]
         Left = 8
         Top = 5

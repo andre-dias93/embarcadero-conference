@@ -21,17 +21,14 @@ object frmPresenterBase: TfrmPresenterBase
     Top = 30
     Width = 658
     Height = 376
-    ActivePage = tabPesquisa
+    ActivePage = tabCadastro
     Align = alClient
     TabOrder = 0
     TabPosition = tpBottom
     TabStop = False
+    ExplicitTop = 34
     object tabCadastro: TTabSheet
       Caption = 'Cadastro'
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object pnlFooterCadastro: TPanel
         Left = 0
         Top = 314
