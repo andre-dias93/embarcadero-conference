@@ -1,0 +1,28 @@
+inherited ServiceProfissional: TServiceProfissional
+  inherited Connection: TFDConnection
+    Connected = True
+  end
+  inherited qryReport: TFDQuery
+    SQL.Strings = (
+      'select id, job, email, name from professional')
+    object qryReportID: TIntegerField
+      FieldName = 'ID'
+      Origin = 'ID'
+    end
+    object qryReportJOB: TWideStringField
+      FieldName = 'JOB'
+      Origin = 'JOB'
+      Size = 30
+    end
+    object qryReportEMAIL: TWideStringField
+      FieldName = 'EMAIL'
+      Origin = 'EMAIL'
+      Size = 50
+    end
+    object qryReportNAME: TWideStringField
+      FieldName = 'NAME'
+      Origin = 'NAME'
+      Size = 100
+    end
+  end
+end

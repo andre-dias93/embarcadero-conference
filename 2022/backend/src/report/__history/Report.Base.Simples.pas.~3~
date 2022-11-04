@@ -1,0 +1,25 @@
+unit Report.Base.Simples;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, Report.Base, frxClass;
+
+type
+  TReportBaseSimples = class(TReportBase)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  ReportBaseSimples: TReportBaseSimples;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+end.

@@ -1,0 +1,211 @@
+inherited ReportBaseSimples: TReportBaseSimples
+  Width = 365
+  inherited frxReport: TfrxReport
+    OnBeforePrint = nil
+    Left = 167
+    Datasets = <
+      item
+        DataSet = dbReport
+        DataSetName = 'Principal'
+      end>
+    Variables = <
+      item
+        Name = ' Fiorilli'
+        Value = Null
+      end
+      item
+        Name = 'Usuario'
+        Value = Null
+      end
+      item
+        Name = 'Filtros'
+        Value = Null
+      end>
+    Style = <>
+    inherited PageBase: TfrxReportPage
+      inherited PageHeaderBase: TfrxPageHeader
+        inherited lblEnderecoBase: TfrxMemoView
+          Formats = <
+            item
+            end
+            item
+            end
+            item
+            end
+            item
+            end>
+        end
+      end
+      inherited PageFooterBase: TfrxPageFooter
+        Top = 317.480520000000000000
+        inherited lblDataEmissaoBase: TfrxMemoView
+          Formats = <
+            item
+            end
+            item
+            end
+            item
+            end
+            item
+            end
+            item
+            end>
+        end
+      end
+      object bandHeaderBaseSimples: TfrxHeader
+        FillType = ftBrush
+        Fill.BackColor = clBtnFace
+        FillGap.Top = 0
+        FillGap.Left = 0
+        FillGap.Bottom = 0
+        FillGap.Right = 0
+        Frame.Typ = []
+        Height = 13.984251970000000000
+        Top = 162.519790000000000000
+        Width = 718.110700000000000000
+        ReprintOnNewPage = True
+      end
+      object bandMasterDataBaseSimples: TfrxMasterData
+        FillType = ftBrush
+        FillGap.Top = 0
+        FillGap.Left = 0
+        FillGap.Bottom = 0
+        FillGap.Right = 0
+        Frame.Typ = []
+        Height = 19.118120000000000000
+        Top = 200.315090000000000000
+        Width = 718.110700000000000000
+        DataSet = dbReport
+        DataSetName = 'Principal'
+        RowCount = 0
+      end
+      object Footer1: TfrxFooter
+        FillType = ftBrush
+        FillGap.Top = 0
+        FillGap.Left = 0
+        FillGap.Bottom = 0
+        FillGap.Right = 0
+        Frame.Typ = []
+        Height = 13.984251970000000000
+        Top = 241.889920000000000000
+        Width = 718.110700000000000000
+        object Line1: TfrxLineView
+          AllowVectorExport = True
+          Width = 718.110700000000000000
+          Color = clBlack
+          Frame.Typ = [ftTop]
+        end
+        object lblQuantidadeRegistrosBaseSimples: TfrxMemoView
+          AllowVectorExport = True
+          Width = 366.614410000000000000
+          Height = 13.606299210000000000
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = []
+          Memo.UTF8W = (
+            'Quantidade de registros: [COUNT(MasterData1)]')
+          ParentFont = False
+        end
+      end
+    end
+  end
+  object dbReport: TfrxDBDataset
+    UserName = 'Principal'
+    CloseDataSource = False
+    FieldAliases.Strings = (
+      'ID_DMD=ID_DMD'
+      'DESCRICAO_DMD=DESCRICAO_DMD'
+      'GRUPO_DMD=GRUPO_DMD'
+      'ASSUNTO_DMD=ASSUNTO_DMD'
+      'CLASSASSUNTO_DMD=CLASSASSUNTO_DMD'
+      'TIPO_ATE_DMD=TIPO_ATE_DMD'
+      'ID_AAC_DMD=ID_AAC_DMD'
+      'ATIVO_DMD=ATIVO_DMD'
+      'ID_CNV=ID_CNV'
+      'DESCRICAO_AAC=DESCRICAO_AAC'
+      'GRUPO=GRUPO')
+    DataSet = qryReport
+    BCDToCurrency = False
+    Left = 257
+    Top = 54
+  end
+  object qryReport: TFDQuery
+    SQL.Strings = (
+      'select *'
+      
+        '  from (select dmd.id_dmd, dmd.descricao_dmd, dmd.grupo_dmd, dmd' +
+        '.assunto_dmd, dmd.classassunto_dmd,'
+      
+        '               dmd.tipo_ate_dmd, dmd.id_aac_dmd, dmd.ativo_dmd, ' +
+        'dmd.id_cnv, aac.descricao_aac,'
+      '               grp.descricao_dmd as grupo'
+      '          from sas_demandas dmd'
+      
+        '          left join sas_atendimentos_acao aac on aac.id_aac = dm' +
+        'd.id_aac_dmd'
+      
+        '          left join sas_demandas grp on grp.id_dmd = dmd.grupo_d' +
+        'md)')
+    Left = 71
+    Top = 54
+    object qryReportID_DMD: TSmallintField
+      FieldName = 'ID_DMD'
+      Origin = 'ID_DMD'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object qryReportDESCRICAO_DMD: TWideStringField
+      FieldName = 'DESCRICAO_DMD'
+      Origin = 'DESCRICAO_DMD'
+      Required = True
+      Size = 100
+    end
+    object qryReportGRUPO_DMD: TSmallintField
+      FieldName = 'GRUPO_DMD'
+      Origin = 'GRUPO_DMD'
+    end
+    object qryReportASSUNTO_DMD: TSmallintField
+      FieldName = 'ASSUNTO_DMD'
+      Origin = 'ASSUNTO_DMD'
+    end
+    object qryReportCLASSASSUNTO_DMD: TSmallintField
+      FieldName = 'CLASSASSUNTO_DMD'
+      Origin = 'CLASSASSUNTO_DMD'
+    end
+    object qryReportTIPO_ATE_DMD: TSmallintField
+      FieldName = 'TIPO_ATE_DMD'
+      Origin = 'TIPO_ATE_DMD'
+    end
+    object qryReportID_AAC_DMD: TSmallintField
+      FieldName = 'ID_AAC_DMD'
+      Origin = 'ID_AAC_DMD'
+    end
+    object qryReportATIVO_DMD: TWideStringField
+      FieldName = 'ATIVO_DMD'
+      Origin = 'ATIVO_DMD'
+      FixedChar = True
+      Size = 1
+    end
+    object qryReportID_CNV: TIntegerField
+      FieldName = 'ID_CNV'
+      Origin = 'ID_CNV'
+    end
+    object qryReportDESCRICAO_AAC: TWideStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'DESCRICAO_AAC'
+      Origin = 'DESCRICAO_AAC'
+      ProviderFlags = []
+      ReadOnly = True
+      Size = 100
+    end
+    object qryReportGRUPO: TWideStringField
+      FieldName = 'GRUPO'
+      Origin = 'DESCRICAO_DMD'
+      ProviderFlags = []
+      Size = 100
+    end
+  end
+end

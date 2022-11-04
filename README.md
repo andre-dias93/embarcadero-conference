@@ -7,3 +7,6 @@
 
 #### **2021**
 * [Presenter e Container Architeture: Um novo conceito para organização de seus fontes no Delphi.](https://github.com/andre-dias93/embarcadero-conference/tree/master/2021)
+
+#### **2022**
+* [Case Fiorilli: Relatórios via API’s com Horse e Angular.](https://github.com/andre-dias93/embarcadero-conference/tree/master/2022)

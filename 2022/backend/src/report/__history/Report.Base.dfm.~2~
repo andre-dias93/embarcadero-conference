@@ -1,0 +1,26 @@
+object ReportBase: TReportBase
+  OldCreateOrder = False
+  Height = 150
+  Width = 215
+  object frxReport: TfrxReport
+    Version = '6.9.15'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick, pbCopy, pbSelection]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Padr'#227'o'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 44847.929980289350000000
+    ReportOptions.LastChange = 44847.929980289350000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    Left = 96
+    Top = 56
+    Datasets = <>
+    Variables = <>
+    Style = <>
+  end
+end

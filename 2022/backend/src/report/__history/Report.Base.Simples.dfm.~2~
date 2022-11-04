@@ -1,0 +1,140 @@
+inherited ReportBaseSimples: TReportBaseSimples
+  OldCreateOrder = True
+  Width = 300
+  inherited frxReport: TfrxReport
+    OnBeforePrint = nil
+    Left = 127
+    Datasets = <
+      item
+      end
+      item
+      end>
+    Variables = <
+      item
+        Name = ' Fiorilli'
+        Value = Null
+      end
+      item
+        Name = 'Usuario'
+        Value = Null
+      end
+      item
+        Name = 'Filtros'
+        Value = Null
+      end>
+    Style = <>
+    inherited PageBase: TfrxReportPage
+      inherited PageFooterBase: TfrxPageFooter
+        inherited lblDataEmissaoBase: TfrxMemoView
+          Formats = <
+            item
+            end
+            item
+            end
+            item
+            end
+            item
+            end
+            item
+            end>
+        end
+      end
+    end
+  end
+  object qryReport: TFDQuery
+    SQL.Strings = (
+      'select *'
+      
+        '  from (select dmd.id_dmd, dmd.descricao_dmd, dmd.grupo_dmd, dmd' +
+        '.assunto_dmd, dmd.classassunto_dmd,'
+      
+        '               dmd.tipo_ate_dmd, dmd.id_aac_dmd, dmd.ativo_dmd, ' +
+        'dmd.id_cnv, aac.descricao_aac,'
+      '               grp.descricao_dmd as grupo'
+      '          from sas_demandas dmd'
+      
+        '          left join sas_atendimentos_acao aac on aac.id_aac = dm' +
+        'd.id_aac_dmd'
+      
+        '          left join sas_demandas grp on grp.id_dmd = dmd.grupo_d' +
+        'md)')
+    Left = 63
+    Top = 54
+    object qryReportID_DMD: TSmallintField
+      FieldName = 'ID_DMD'
+      Origin = 'ID_DMD'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object qryReportDESCRICAO_DMD: TWideStringField
+      FieldName = 'DESCRICAO_DMD'
+      Origin = 'DESCRICAO_DMD'
+      Required = True
+      Size = 100
+    end
+    object qryReportGRUPO_DMD: TSmallintField
+      FieldName = 'GRUPO_DMD'
+      Origin = 'GRUPO_DMD'
+    end
+    object qryReportASSUNTO_DMD: TSmallintField
+      FieldName = 'ASSUNTO_DMD'
+      Origin = 'ASSUNTO_DMD'
+    end
+    object qryReportCLASSASSUNTO_DMD: TSmallintField
+      FieldName = 'CLASSASSUNTO_DMD'
+      Origin = 'CLASSASSUNTO_DMD'
+    end
+    object qryReportTIPO_ATE_DMD: TSmallintField
+      FieldName = 'TIPO_ATE_DMD'
+      Origin = 'TIPO_ATE_DMD'
+    end
+    object qryReportID_AAC_DMD: TSmallintField
+      FieldName = 'ID_AAC_DMD'
+      Origin = 'ID_AAC_DMD'
+    end
+    object qryReportATIVO_DMD: TWideStringField
+      FieldName = 'ATIVO_DMD'
+      Origin = 'ATIVO_DMD'
+      FixedChar = True
+      Size = 1
+    end
+    object qryReportID_CNV: TIntegerField
+      FieldName = 'ID_CNV'
+      Origin = 'ID_CNV'
+    end
+    object qryReportDESCRICAO_AAC: TWideStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'DESCRICAO_AAC'
+      Origin = 'DESCRICAO_AAC'
+      ProviderFlags = []
+      ReadOnly = True
+      Size = 100
+    end
+    object qryReportGRUPO: TWideStringField
+      FieldName = 'GRUPO'
+      Origin = 'DESCRICAO_DMD'
+      ProviderFlags = []
+      Size = 100
+    end
+  end
+  object dbReport: TfrxDBDataset
+    UserName = 'Principal'
+    CloseDataSource = False
+    FieldAliases.Strings = (
+      'ID_DMD=ID_DMD'
+      'DESCRICAO_DMD=DESCRICAO_DMD'
+      'GRUPO_DMD=GRUPO_DMD'
+      'ASSUNTO_DMD=ASSUNTO_DMD'
+      'CLASSASSUNTO_DMD=CLASSASSUNTO_DMD'
+      'TIPO_ATE_DMD=TIPO_ATE_DMD'
+      'ID_AAC_DMD=ID_AAC_DMD'
+      'ATIVO_DMD=ATIVO_DMD'
+      'ID_CNV=ID_CNV'
+      'DESCRICAO_AAC=DESCRICAO_AAC'
+      'GRUPO=GRUPO')
+    DataSet = qryReport
+    BCDToCurrency = False
+    Left = 191
+    Top = 54
+  end
+end

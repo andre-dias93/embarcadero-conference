@@ -1,0 +1,16 @@
+unit Controller.Profissional;
+
+interface
+
+uses Horse, System.Classes, Horse.OctetStream;
+
+procedure Registry;
+
+implementation
+
+procedure Registry;
+begin
+  THorse.Get('/profissionais', DoReportProfissionais);
+end;
+
+end.

@@ -1,0 +1,41 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-h2, .mat-title, .mat-typography .mat-h2, .mat-typography .mat-title, .mat-typography h2 {
+    color: red !important;
+}
+
+.mat-list-base .mat-list-item {
+    font-size: 14px;
+}
+
+.mat-list-base .mat-list-item, .mat-list-base .mat-list-option {
+    height: 40px !important;
+}
+
+.mat-icon {
+
+}
+
+.mat-card, .mat-icon {
+    color: #000000b8;
+}
+
+.sidenav .mat-toolbar, .mat-toolbar.mat-primary {
+    background-color: #2c3073 !important;
+}
+
+.mat-toolbar {
+    color: white;
+}
+
+.mat-drawer-side {
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 13%);
+    border-right: none;
+}

@@ -1,0 +1,13 @@
+{
+	"name": "ec-2022",
+	"description": "",
+	"version": "1.0.0",
+	"homepage": "",
+	"mainsrc": "./src",
+	"projects": [],
+	"dependencies": {
+		"github.com/hashload/horse": "^3.0.2",
+		"github.com/hashload/horse-cors": "^1.0.5",
+		"github.com/hashload/horse-octet-stream": "^1.9.8"
+	}
+}
