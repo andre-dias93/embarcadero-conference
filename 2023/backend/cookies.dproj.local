@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/09/26 21:23:48.000.100,C:\Projects\Palestras\embarcadero-conference\2023\backend\cookies.dproj=C:\Users\andre.dias\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2023/09/26 21:49:32.000.955,=C:\Projects\Palestras\embarcadero-conference\2023\backend\Unit1.pas</Transaction>
+    <Transaction>2023/09/26 21:50:08.000.609,C:\Projects\Palestras\embarcadero-conference\2023\backend\src\controller\Controller.Cookie.pas=C:\Projects\Palestras\embarcadero-conference\2023\backend\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
