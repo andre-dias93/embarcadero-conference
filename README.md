@@ -10,3 +10,6 @@
 
 #### **2022**
 * [Case Fiorilli: Relatórios via API’s com Horse e Angular.](https://github.com/andre-dias93/embarcadero-conference/tree/master/2022)
+
+#### **2023**
+* [Você sabe o que são Cookies?Como eles podem ser importantes em nossas aplicações?.](https://github.com/andre-dias93/embarcadero-conference/tree/master/2023)
