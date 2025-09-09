@@ -13,3 +13,6 @@
 
 #### **2023**
 * [Você sabe o que são Cookies? Como eles podem ser importantes em nossas aplicações?](https://github.com/andre-dias93/embarcadero-conference/tree/master/2023)
+
+#### **2025**
+* [Event-Driven Architecture: Como Transformar Aplicações Tradicionais em Sistemas Reativos](https://github.com/andre-dias93/embarcadero-conference/tree/master/2025)
